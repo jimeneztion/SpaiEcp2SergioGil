@@ -7,6 +7,7 @@ import org.junit.Test;
 
 public class FractionTest {
 	private Fraction fr;
+	private Fraction fr2;
 
 	@Before
 	public void before() {
@@ -36,5 +37,14 @@ public class FractionTest {
 		fr = new Fraction(3, 0);
 		assertEquals(Double.POSITIVE_INFINITY, fr.decimal(), 10e-1);
 	}
+	
+	
+	@Test
+    public void testIsHigher() {
+        fr2 = new Fraction(3, 9);
+        assertEquals(true, fr.isHigher(fr2));
+    }
+    
+	
 
 }
