@@ -14,6 +14,19 @@ public class User {
         this.familyName = this.format(familyName);
     }
     
+    public void setNumber(int n){
+        this.number = n;
+    }
+    
+    public void setName(String nm){
+        this.name = nm;
+    }
+    
+    public void setFamilyName(String fn){
+        this.familyName = fn;
+    }
+
+    
     private String format(String string) {
         string = string.trim();
         return string.substring(0, 1).toUpperCase() + string.substring(1).toLowerCase();
