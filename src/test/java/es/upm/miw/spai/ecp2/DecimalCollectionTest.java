@@ -59,5 +59,10 @@ public class DecimalCollectionTest {
 	public void testHigher() {
 		assertEquals(16.99, dc.higher(), 10e-5);
 	}
+	
+	@Test
+	public void testMedium(){
+		assertEquals(4.9826, dc.medium(), 10e-5);
+	}
 
 }
