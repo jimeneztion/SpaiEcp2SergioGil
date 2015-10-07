@@ -2,41 +2,44 @@ package es.upm.miw.spai.ecp2;
 
 public class User {
 
-    private int number;
+	private int number;
 
-    private String name;
+	private String name;
 
-    private String familyName;
+	private String familyName;
 
-    public User(int number, String name, String familyName) {
-        this.number = number;
-        this.name = this.format(name);
-        this.familyName = this.format(familyName);
-    }
-    
-    private String format(String string) {
-        string = string.trim();
-        return string.substring(0, 1).toUpperCase() + string.substring(1).toLowerCase();
-    }
+	public User(int number, String name, String familyName) {
+		this.number = number;
+		this.name = this.format(name);
+		this.familyName = this.format(familyName);
+	}
 
-    public String fullName() {
-        return this.name + " " + this.familyName;
-    }
+	private String format(String string) {
+		string = string.trim();
+		return string.substring(0, 1).toUpperCase() + string.substring(1).toLowerCase();
+	}
 
-    public String initials() {
-        return this.name.substring(0, 1) + ".";
-    }
+	public String fullName() {
+		return this.name + " " + this.familyName;
+	}
 
-    public int getNumber() {
-        return this.number;
-    }
+	public String initials() {
+		return this.name.substring(0, 1) + ".";
+	}
 
-    public String getName() {
-        return this.name;
-    }
+	public int getNumber() {
+		return this.number;
+	}
 
-    public String getFamilyName() {
-        return this.familyName;
-    }
+	public String getName() {
+		return this.name;
+	}
 
+	public String getFamilyName() {
+		return this.familyName;
+	}
+
+	public String changeUperCase() {
+		return this.name.toUpperCase();
+	}
 }
