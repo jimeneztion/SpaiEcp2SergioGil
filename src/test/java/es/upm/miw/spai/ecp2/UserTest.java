@@ -38,4 +38,9 @@ public class UserTest {
 		assertEquals(usr.initials(), "C.");
 	}
 
+	@Test
+	public void testChangeUperCase() {
+		assertEquals("CARLOS", usr.changeUperCase());
+	}
+
 }
