@@ -2,54 +2,57 @@ package es.upm.miw.spai.ecp2;
 
 public class User {
 
-    private int number;
+	private int number;
 
-    private String name;
+	private String name;
 
-    private String familyName;
+	private String familyName;
 
-    public User(int number, String name, String familyName) {
-        this.number = number;
-        this.name = this.format(name);
-        this.familyName = this.format(familyName);
-    }
-    
-    public void setNumber(int n){
-        this.number = n;
-    }
-    
-    public void setName(String nm){
-        this.name = nm;
-    }
-    
-    public void setFamilyName(String fn){
-        this.familyName = fn;
-    }
+	public User(int number, String name, String familyName) {
+		this.number = number;
+		this.name = this.format(name);
+		this.familyName = this.format(familyName);
+	}
 
-    
-    private String format(String string) {
-        string = string.trim();
-        return string.substring(0, 1).toUpperCase() + string.substring(1).toLowerCase();
-    }
+	public void setNumber(int n) {
+		this.number = n;
+	}
 
-    public String fullName() {
-        return this.name + " " + this.familyName;
-    }
+	public void setName(String nm) {
+		this.name = nm;
+	}
 
-    public String initials() {
-        return this.name.substring(0, 1) + ".";
-    }
+	public void setFamilyName(String fn) {
+		this.familyName = fn;
+	}
 
-    public int getNumber() {
-        return this.number;
-    }
+	private String format(String string) {
+		string = string.trim();
+		return string.substring(0, 1).toUpperCase() + string.substring(1).toLowerCase();
+	}
 
-    public String getName() {
-        return this.name;
-    }
+	public String fullName() {
+		return this.name + " " + this.familyName;
+	}
 
-    public String getFamilyName() {
-        return this.familyName;
-    }
+	public String initials() {
+		return this.name.substring(0, 1) + ".";
+	}
+
+	public int getNumber() {
+		return this.number;
+	}
+
+	public String getName() {
+		return this.name;
+	}
+
+	public String getFamilyName() {
+		return this.familyName;
+	}
+
+	public String changeUperCase() {
+		return this.name.toUpperCase();
+	}
 
 }
