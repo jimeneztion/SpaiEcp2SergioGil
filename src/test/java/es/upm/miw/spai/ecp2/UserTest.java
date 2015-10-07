@@ -37,24 +37,29 @@ public class UserTest {
 	public void testInitials() {
 		assertEquals(usr.initials(), "C.");
 	}
-	
-    
-    @Test
-    public void testSetNumber() {
-        usr.setNumber(34);
-        assertEquals(34,usr.getNumber());
-    }
-    @Test
-    public void testSetName() {
-        usr.setName("Pepe");
-        assertEquals("Pepe",usr.getName());
-    }
-    
-    @Test
-    public void testSetFamilyName() {
-    usr.setFamilyName("Martin");
-    assertEquals("Martin",usr.getFamilyName());
-    }
 
+	@Test
+	public void testSetNumber() {
+		usr.setNumber(34);
+		assertEquals(34, usr.getNumber());
+	}
+
+	@Test
+	public void testSetName() {
+		usr.setName("Pepe");
+		assertEquals("Pepe", usr.getName());
+	}
+
+	@Test
+	public void testSetFamilyName() {
+		usr.setFamilyName("Martin");
+		assertEquals("Martin", usr.getFamilyName());
+	}
+
+	@Test
+	public void testChangeUperCase() {
+		usr.setName("alejandra");
+		assertEquals("ALEJANDRA", usr.changeUperCase());
+	}
 
 }
