@@ -61,4 +61,12 @@ public class Fraction {
         return denominator;
     }
     
+    public boolean isSmaller(Fraction c) {
+        if (this.decimal() < c.decimal()) {
+            return true;
+        } else
+            return false;
+
+    }
+    
 }
