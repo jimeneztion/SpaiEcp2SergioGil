@@ -30,6 +30,11 @@ public class Point {
         this.y -= origin.getY();
     }
     
+    public double distance(Point pt){    	
+    	double d = Math.hypot(pt.getX()-x, pt.getY()-y);
+    	return d;
+    }
+    
     public int getX() {
         return this.x;
     }
