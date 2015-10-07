@@ -42,6 +42,11 @@ public class PointTest {
         assertEquals(1, pt.getX());
         assertEquals(2, pt.getY());
     }
+    
+    public void testDistance(){
+    	Point p = new Point(5,6);
+    	assertEquals(4.2426, this.pt.distance(p),10e-5);
+    }
 
     @Test
     public void testToString() {
