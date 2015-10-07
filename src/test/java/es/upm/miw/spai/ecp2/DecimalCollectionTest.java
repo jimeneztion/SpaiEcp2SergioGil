@@ -64,5 +64,10 @@ public class DecimalCollectionTest {
 	public void testSmaller() {
 		assertEquals(-1.3122, dc.smaller(), 0);
 	}
+	
+	@Test
+	public void testMedium(){
+		assertEquals(4.9826, dc.medium(), 10e-5);
+	}
 
 }

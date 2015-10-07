@@ -46,4 +46,14 @@ public class DecimalCollection {
 		return smaller;
 	}
 
+    public double medium(){
+    	double med = 0;
+    	
+    	for (double item : this.collection)
+            med += item;
+    	med = med / this.size();
+    	
+    	return med;
+    }
+
 }
