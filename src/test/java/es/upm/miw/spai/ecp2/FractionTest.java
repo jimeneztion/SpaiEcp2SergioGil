@@ -36,5 +36,14 @@ public class FractionTest {
 		fr = new Fraction(3, 0);
 		assertEquals(Double.POSITIVE_INFINITY, fr.decimal(), 10e-1);
 	}
+	
+	@Test
+	public void testCompare(){
+		Fraction f1 = new Fraction(1,2);
+		Fraction f2 = new Fraction(3,4);
+		
+		assertEquals(true,fr.compare(f1));
+		assertEquals(false,fr.compare(f2));
+	}
 
 }
