@@ -45,7 +45,11 @@ public class Fraction {
     public double decimal() {
         return (double) numerator / denominator;
     }
-
+    
+    public boolean compare(Fraction c){
+    	return this.getNumerator()==c.getNumerator() && this.getDenominator()==c.getDenominator();
+    }
+  
     public int getNumerator() {
         return numerator;
     }
